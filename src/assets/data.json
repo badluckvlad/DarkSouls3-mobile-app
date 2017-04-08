@@ -1,0 +1,90 @@
+[
+    {
+        "id": "1",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Undead Settlement",
+        "obtain": "Start near the Dilapidated Bridge bonfire near the white birch tree where the arrows fall if you haven't killed or befriended the giant, to the right of this tree is a platform you can jump to with the Undead Bone Shard on a dead body.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "2",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Farron Keep",
+        "obtain": "On the bottom of the tower to the right of the door with the three flames that you have to light. It is surrounded by a bunch of slugs.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "3",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Cathedral of the Deep",
+        "obtain": "Also near a white birch tree that the Giant shoots arrows around,  on the roof area of the Cathedral after navigating the graveyard and crossing a bridge.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "4",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Catacombs of Carthus",
+        "obtain": "Kill the skeleton with a hat at the bottom of the long stairs, near the first Skeleton Ball, to break the ball and reveal a shard.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "5",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Smouldering Lake",
+        "obtain": "Kill the Carthus Sandworm.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "6",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Smouldering Lake",
+        "obtain": "From the Demon Ruins bonfire. Head down the stairs into the long room filled with floating fireballs and demons. Head left towards the end of the room. The boneshard is located with bodies of dead demons. Below a Fire Slime that attemps to fall ontop of you.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "7",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Irithyll of the Boreal Valley",
+        "obtain": "Starting at the Church of Yorshka bonfire, go down the hallway stairs, and go right along the cliff. The Undead Bone shard is located behind the large tombstone at the end of this path.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "8",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Profaned Capital",
+        "obtain": "After you fight the first Gargoyle of the area, it will be on a corpse right next to the bonfire.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "9",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Lothric Castle",
+        "obtain": "Starting at the Dragon Barracks bonfire, go up the stairs and to the bridge where the two dragons are. Run almost all the way across the bridge and drop off at the end. The Undead Bone Shard is underneath the bridge.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "10",
+        "image": "undead_bone_shard.png",
+        "name": "Undead Bone Shard",
+        "location": "Grand Archives",
+        "obtain": "In the area of the rooftops where you fight some Gargoyles, there will be a broken window that you can enter. The shard will be in this room.",
+        "video": "MF_A0qlQjK0"
+    },
+    {
+        "id": "1",
+        "image": "estus_shard.png",
+        "name": "Estus Shard",
+        "location": "Grand Archives",
+        "obtain": "In the area of the rooftops where you fight some Gargoyles, there will be a broken window that you can enter. The shard will be in this room.",
+        "video": "MF_A0qlQjK0"
+    }
+]
