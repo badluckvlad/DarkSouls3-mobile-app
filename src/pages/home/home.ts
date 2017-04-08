@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+import { Storage } from '@ionic/storage';
 import { Api } from '../../providers/api';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [YoutubeVideoPlayer, Storage]
+  providers: [YoutubeVideoPlayer]
 })
 export class HomePage {
 
@@ -18,13 +18,16 @@ export class HomePage {
   constructor(
     public navCtrl: NavController,
     public api: Api,
-    public youtube: YoutubeVideoPlayer
+    public youtube: YoutubeVideoPlayer,
+    public storage: Storage
   ) {
+    
   }
 
   ionViewDidLoad() {
     this.getData();
     console.log(this.data);
+    this.testF();
   }
 
   getData() {
@@ -46,4 +49,17 @@ export class HomePage {
   isShown(group) {
     return this.shownGroup === group;
   };
+
+  testF() {
+    this.storage.ready().then(() => {
+
+       // set a key/value
+       this.storage.set('name', 'Max');
+
+       // Or to get a key/value pair
+       this.storage.get('name').then((val) => {
+         console.log('Your age is', val);
+       })
+     });
+  }
 }
