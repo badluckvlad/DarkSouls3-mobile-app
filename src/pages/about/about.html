@@ -1,11 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+    <ion-title>About</ion-title>
+    <button ion-button (click)="name();">Rings</button>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+    <ion-item *ngFor="let item of data; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isShown(i)}">
+      <ion-avatar>
+        <img src="../assets/img/{{item.image}}" />
+      </ion-avatar>
+      <h3>{{item.name}}</h3>
+      <div *ngIf="isShown(i)">
+        <h3>{{item.location}}</h3>
+        <p>{{item.obtain}}</p>
+        <p>{{ test }}</p>
+        <button ion-button color="danger" (click)="video(video);">Video</button>
+      </div>
+    </ion-item>
 
 </ion-content>

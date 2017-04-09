@@ -11,27 +11,24 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 })
 export class HomePage {
 
-  data: string[];
+  data: any;
   shownGroup = null;
   test: any;
+  category = "estus_shards";
 
   constructor(
     public navCtrl: NavController,
     public api: Api,
     public youtube: YoutubeVideoPlayer,
     public storage: Storage
-  ) {
-    
-  }
+  ) { }
 
   ionViewDidLoad() {
-    this.getData();
-    console.log(this.data);
-    this.testF();
+    this.getData(this.category);
   }
 
-  getData() {
-    this.api.getData()
+  getData(category) {
+    this.api.getData(category)
       .subscribe(data => this.data = data);
   }
 
@@ -46,20 +43,22 @@ export class HomePage {
       this.shownGroup = group;
     }
   };
+  
   isShown(group) {
     return this.shownGroup === group;
   };
 
-  testF() {
+  storeKey() {
     this.storage.ready().then(() => {
-
-       // set a key/value
-       this.storage.set('name', 'Max');
-
-       // Or to get a key/value pair
        this.storage.get('name').then((val) => {
-         console.log('Your age is', val);
+         this.test = val;
        })
      });
   }
+
+  getItems(category) {
+    this.category = category;
+    this.getData(this.category);
+  }
+  
 }

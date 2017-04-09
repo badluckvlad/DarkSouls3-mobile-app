@@ -6,14 +6,12 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class Api {
+  fileName : string;
+  private url: string;
+  constructor(public http: Http) { }
 
-  private url = '../assets/data.json';
-
-  constructor(public http: Http) {
-    console.log('Hello Api Provider');
-  }
-
-  getData(): Observable<string[]> {
+  getData(name): Observable<string[]> {
+    this.setUrl(name);
     return this.http.get(this.url)
       .map(this.extractData);
   }
@@ -23,4 +21,9 @@ export class Api {
     return body || {};
   }
 
+  setUrl(name) {
+    this.url = '../assets/'+name+'.json';
+  }
+
 }
+
