@@ -12,7 +12,7 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 export class HomePage {
 
   data: any;
-  shownGroup = null;
+  shownItem = null;
   test: any;
   category = "estus_shards";
 
@@ -36,16 +36,16 @@ export class HomePage {
     this.youtube.openVideo(videoId);
   }
 
-  toggleGroup(group) {
-    if (this.isShown(group)) {
-      this.shownGroup = null;
+  toggleItem(item) {
+    if (this.isShown(item)) {
+      this.shownItem = null;
     } else {
-      this.shownGroup = group;
+      this.shownItem = item;
     }
   };
   
-  isShown(group) {
-    return this.shownGroup === group;
+  isShown(item) {
+    return this.shownItem === item;
   };
 
   storeKey() {

@@ -3,13 +3,13 @@
     <ion-title>{{ category }}</ion-title>
     <button ion-button (click)="getItems('rings');">Rings</button>
     <button ion-button (click)="getItems('estus_shards');">Estus</button>
-    <button ion-button (click)="getItems('undead_bone_shards');">Undead</button>
+    <button ion-button [name]="rings" (click)="getItems([name]);">Undead</button>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-    <ion-item *ngFor="let item of data; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isShown(i)}">
+    <ion-item *ngFor="let item of data; let i=index" text-wrap (click)="toggleItem(i)" [ngClass]="{active: isShown(i)}">
       <ion-avatar>
         <img src="../assets/img/{{item.image}}" />
       </ion-avatar>

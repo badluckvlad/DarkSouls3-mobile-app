@@ -2,7 +2,7 @@
         {
             "id": "1",
             "image": "estus_shard.png",
-            "name": "Covetous Silver Serpent Ring",
+            "name": "Vlda",
             "location": "Undead Settlement",
             "obtain": "Start near the Dilapidated Bridge bonfire near the white birch tree where the arrows fall if you haven't killed or befriended the giant, to the right of this tree is a platform you can jump to with the Undead Bone Shard on a dead body.",
             "video": "MF_A0qlQjK0"
@@ -10,7 +10,7 @@
         {
             "id": "2",
             "image": "estus_shard.png",
-            "name": "Undead Bone Shard",
+            "name": "Estus Shard",
             "location": "Undead Settlement",
             "obtain": "Start near the Dilapidated Bridge bonfire near the white birch tree where the arrows fall if you haven't killed or befriended the giant, to the right of this tree is a platform you can jump to with the Undead Bone Shard on a dead body.",
             "video": "MF_A0qlQjK0"

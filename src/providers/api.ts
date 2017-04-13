@@ -22,7 +22,7 @@ export class Api {
   }
 
   setUrl(name) {
-    this.url = '../assets/'+name+'.json';
+    this.url = '../assets/data/'+name+'.json';
   }
 
 }
